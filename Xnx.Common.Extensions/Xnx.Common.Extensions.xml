@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Xnx.Common.Extensions</name>
+    </assembly>
+    <members>
+        <member name="M:Xnx.Common.Extensions.IEnumerableEx.IsNullOrEmpty``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Determines whether the object is NULL or contains no elements
+            </summary>
+            <typeparam name="T">The Type of objects to enumerate</typeparam>
+            <param name="objs">The objects to enumerate</param>
+            <returns>TRUE if the object is NULL or contains no elements; otherwise FALSE</returns>
+        </member>
+        <member name="M:Xnx.Common.Extensions.IEnumerableEx.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
+            <summary>
+            Iterates a collection objects and performs an action on them
+            </summary>
+            <typeparam name="T">The Type of objects to enumerate</typeparam>
+            <param name="objs">The objects upon which the action should be performed</param>
+            <param name="action">The action to perform on each object in the collection</param>
+        </member>
+        <member name="M:Xnx.Common.Extensions.IEnumerableEx.ToStack``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Creates a Stack from supplied list of objects by Pushing them onto the Stack in reverse order, thus allowing them
+            to be Popped off of the Stack in their original order. This is particularly useful for recusive functions.
+            </summary>
+            <typeparam name="T">The type of objects to enumerate</typeparam>
+            <param name="objs">The objects to Push on to the Stack</param>
+            <returns>A Stack&lt;<typeparamref name="T"/>&gt; of the objects</returns>
+        </member>
+    </members>
+</doc>

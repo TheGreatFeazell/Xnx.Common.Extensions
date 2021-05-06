@@ -4,4 +4,8 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\Users\jfeaz\source\repos\Xnx.Common.Extensions\Xnx.Common.Extensions\Xnx.Common.Extensions.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
