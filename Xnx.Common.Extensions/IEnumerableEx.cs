@@ -12,6 +12,17 @@ namespace Xnx.Common.Extensions
             return objs == null || objs.Count() == 0;
         }
 
+        public static void ForEach<T>( this IEnumerable<T> objs, Action<T> action)
+        {
+            if( !objs.IsNullOrEmpty() )
+            {
+                foreach( var obj in objs )
+                {
+                    action( obj );
+                }
+            }
+        }
+
         public static Stack<T> ToStack<T>( this IEnumerable<T> objs )
         {
             var stack = new Stack<T>();
